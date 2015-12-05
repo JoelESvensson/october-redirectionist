@@ -4,7 +4,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class CreatePageStatsTable extends Migration
+class CreateRedirectionsTable extends Migration
 {
     public function up()
     {
