@@ -1,0 +1,13 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    from_route:
+        label: Källsökväg
+        span: left
+
+    to_route:
+        label: Målsökväg
+        span: right

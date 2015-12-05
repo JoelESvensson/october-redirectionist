@@ -1,0 +1,42 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('engagementagency/redirectionist/redirections') ?>">Vidarebefordringar</a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+    <?= Form::open(['class' => 'layout']) ?>
+
+        <div class="layout-row">
+            <?= $this->formRender() ?>
+        </div>
+
+        <div class="form-buttons">
+            <div class="loading-indicator-container">
+                <button
+                    type="submit"
+                    data-request="onSave"
+                    data-hotkey="ctrl+s"
+                    data-hotkey-mac="cmd+s"
+                    data-load-indicator="Skapar vidarebefordring..."
+                    class="btn btn-primary">Skapa</button>
+                <button
+                    type="button"
+                    data-request="onSave"
+                    data-request-data="close:1"
+                    data-hotkey="ctrl+enter"
+                    data-hotkey-mac="cmd+enter"
+                    data-load-indicator="Skapar vidarebefordring..."
+                    class="btn btn-default">Skapa &amp; stäng</button>
+                <span class="btn-text">eller <a href="<?= Backend::url('engagementagency/redirectionist/redirections') ?>">Avbryt</a></span>
+            </div>
+        </div>
+
+    <?= Form::close() ?>
+
+<?php else: ?>
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('engagementagency/redirectionist/redirections') ?>" class="btn btn-default">Tillbaka</a></p>
+<?php endif ?>

@@ -1,0 +1,33 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+# Model List Column configuration
+list: @/plugins/engagementagency/redirectionist/models/redirection/columns.yaml
+
+# Model Class name
+model-class: EngagementAgency\Redirectionist\Models\Redirection
+
+# List Title
+title: Hantera Vidarebefordringar
+
+# Link URL for each record
+record-url: engagementagency/redirectionist/redirections/update/:id
+
+# Message to display if the list is empty
+no-records-message: backend::lang.list.no_records
+
+# Records to display per page
+records-per-page: 100
+
+# Display checkboxes next to each record
+show-checkboxes: no
+
+# Toolbar widget configuration
+toolbar:
+    # Partial for toolbar buttons
+    buttons: list_toolbar
+
+    # Search widget configuration
+    search:
+        prompt: backend::lang.list.search_prompt

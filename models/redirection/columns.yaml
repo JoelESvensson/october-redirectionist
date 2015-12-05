@@ -1,0 +1,13 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    from_route:
+        label: Källsökväg
+        searchable: true
+
+    to_route:
+        label: Målsökväg
+        searchable: true

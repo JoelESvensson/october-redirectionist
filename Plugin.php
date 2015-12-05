@@ -47,16 +47,6 @@ class Plugin extends PluginBase
                 'icon' => 'icon-angle-double-right',
                 'permissions' => ['engagementagency.redirectionist.*'],
                 'order' => 500,
-
-                'sideMenu' => [
-                    'redirections' => [
-                        'label' => 'Vidarebefordringar',
-                        'icon' => 'icon-angle-double-right',
-                        'url' => Backend::url('engagementagency/redirectionist/redirections'),
-                        'permissions' => ['engagementagency.redirections.access_redirects'],
-                    ],
-                ],
-
             ],
         ];
     }
