@@ -22,7 +22,7 @@ class Plugin extends PluginBase
 
     public function boot()
     {
-        $redirections = Cache::remember('redirections', 60, function () {
+        $redirections = Cache::remember('engagement_redirectionist_redirections', 60, function () {
             return Redirection::all();
         });
         foreach ($redirections as $redirection) {

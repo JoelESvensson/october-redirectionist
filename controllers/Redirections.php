@@ -2,6 +2,7 @@
 
 use BackendMenu;
 use Backend\Classes\Controller;
+use Cache;
 
 class Redirections extends Controller
 {
@@ -19,5 +20,11 @@ class Redirections extends Controller
     {
         parent::__construct();
         BackendMenu::setContext('EngagementAgency.Redirectionist', 'redirectionist', 'redirections');
+    }
+
+    public function formAfterSave($model)
+    {
+        parent::formAfterSave($model);
+        Cache::forget('engagement_redirectionist_redirections');
     }
 }
