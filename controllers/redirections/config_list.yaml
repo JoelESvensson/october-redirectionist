@@ -3,7 +3,7 @@
 # ===================================
 
 # Model List Column configuration
-list: @/plugins/engagementagency/redirectionist/models/redirection/columns.yaml
+list: $/engagementagency/redirectionist/models/redirection/columns.yaml
 
 # Model Class name
 model-class: EngagementAgency\Redirectionist\Models\Redirection

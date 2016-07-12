@@ -3,7 +3,7 @@
 # ===================================
 
 name: Vidarebefordringar
-form: @/plugins/engagementagency/redirectionist/models/redirection/fields.yaml
+form: $/engagementagency/redirectionist/models/redirection/fields.yaml
 model-class: EngagementAgency\Redirectionist\Models\Redirection
 default-redirect: engagementagency/redirectionist/redirections
 
